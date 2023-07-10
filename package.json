@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "global:start": "concurrently  \"cd back-end-sharp-shop && npm run start\" \" next dev\" "
+    "global:start": "concurrently  \"cd back-end-sharp-shop && npm run start\" \" next dev\" ",
+    "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run start\" \" next build\" "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
