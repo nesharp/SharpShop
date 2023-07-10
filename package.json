@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "concurrently \"next build\" \"cd back-end-sharp-shop && npm run build && npm run start\" ",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
