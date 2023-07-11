@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "concurrently \"next build\" \"cd back-end-sharp-shop && npm run build && npm run start\" ",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
     "global:start": "concurrently  \"cd back-end-sharp-shop && npm run start\" \" next dev\" ",
-    "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run start\" \" next build\" "
+    "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run start:prod\" \" next build\" "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
