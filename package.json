@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "global:start": "concurrently \"cd back-end-sharp-shop && npm run start:prod\" \" next build\" ",
-    "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run start:prod\" \" next build\" "
+    "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run prisma generate && npm run start:prod\" \" next build\" "
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
