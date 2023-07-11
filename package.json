@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write .",
-    "global:start": "concurrently  \"cd back-end-sharp-shop && npm run start\" \" next dev\" ",
+    "global:start": "concurrently \"cd back-end-sharp-shop && npm run start:prod\" \" next build\" ",
     "vercel-build": "concurrently \"cd back-end-sharp-shop && npm run start:prod\" \" next build\" "
   },
   "dependencies": {
